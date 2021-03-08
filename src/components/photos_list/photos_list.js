@@ -4,7 +4,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import { CircularProgress } from '@material-ui/core';
 import "./stylesheets/style.css"
 import Images from "../images/images"
-import Picture_modal from '../picture_modal/picture_modal';
+import Custom_modal from "../custom_modal/custom_modal"
 
 export default function Photos_list() {
   const [page, setPage] = useState(1);
@@ -73,8 +73,7 @@ export default function Photos_list() {
 
 
   return (<>
-    <Picture_modal IsOpen={isOpen} Index={curModalIndex} URL={modalURL} CloseModal={closeModalHandler} Next={nextPictureHandler} Prev={prevPictureHandler} Message={message}/>
-    
+    <Custom_modal IsOpen={isOpen} Index={curModalIndex} URL={modalURL} CloseModal={closeModalHandler} Next={nextPictureHandler} Prev={prevPictureHandler} Message={message}/>
     <InfiniteScroll dataLength={photos.length} next={getPhotos} hasMore={true} className="listOuterDiv" >
 
       {photos.map((url,index) => (

@@ -1,12 +1,16 @@
-import React from 'react';
-import ReactModal from "react-modal"
-import "./stylesheets/style.css"
-import NextIcon from "./media/next.svg"
-export default function Picture_modal(props) {
+import React , {useState} from 'react';
+import "./stylesheets/style.css";
+
+export default function Custom_modal(props) {
+    
+
+    
+  
     return (
-        <div>
-            <ReactModal isOpen={props.IsOpen} >
-                <div className="modalMainDiv">
+    
+    <div className={"isOpen"+props.IsOpen}>
+        <div className="innerModalDiv">
+        <div className="modalMainDiv">
                     <div className="closeButtonDiv">
                         <img src="NextIcon" alt="" />
                         <button className="closeButton" onClick={() => props.CloseModal()}>X</button>
@@ -30,7 +34,8 @@ export default function Picture_modal(props) {
                     </div>
                     
                 </div>
-            </ReactModal>
-        </div>
-    );
+            </div> 
+      
+    </div>
+  );
 }
