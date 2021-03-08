@@ -1,0 +1,15 @@
+.listOuterDiv{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-items: center;
+    height: 100%;
+    margin-top: 90px;
+    
+}
+
+.img{
+    margin: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+

@@ -1,0 +1,38 @@
+p {
+  color: maroon;
+}
+.modalMainDiv {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.closeButtonDiv {
+  text-align: right;
+}
+
+.mainPicDiv {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.pic {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.prevButton {
+  display: flex;
+}
+.nextButton {
+  display: flex;
+}
+
+.closeButton{
+background-color: maroon;
+color: white;
+border:none;
+font-weight: bolder;
+padding:5px;
+}
