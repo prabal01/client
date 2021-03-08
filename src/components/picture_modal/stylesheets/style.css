@@ -29,10 +29,46 @@ p {
   display: flex;
 }
 
-.closeButton{
-background-color: maroon;
-color: white;
-border:none;
-font-weight: bolder;
-padding:5px;
+.closeButton {
+  border: 2px solid red;
+  font-weight: bolder;
+  padding: 5px 10px 5px 10px;
+
+}
+
+.closeButton:hover{
+  border: 2px solid red;
+  font-weight: bolder;
+  padding: 5px 10px 5px 10px;
+  background-color: red;
+  color: white;
+}
+.img {
+  transition-duration: 1s;
+}
+
+.prevButton button {
+  background-color: white;
+  border: none;
+  background-image: url("/src/components/picture_modal/media/prev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+}
+
+.prevButton button:focus {
+  outline: none;
+}
+
+.nextButton button {
+  background-color: white;
+  border: none;
+  background-image: url("/src/components/picture_modal/media/next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+}
+
+.nextButton button:focus {
+  outline: none;
 }

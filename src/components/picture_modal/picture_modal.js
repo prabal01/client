@@ -17,7 +17,7 @@ export default function Picture_modal(props) {
                     </div>
                     <div className="mainPicDiv">
                         <div className="prevButton">
-                            <button onClick={() => props.Prev(props.Index)}>Prev</button>
+                            <button onClick={() => props.Prev(props.Index)}></button>
                         </div>
                         <div className="pic">
 
@@ -25,7 +25,7 @@ export default function Picture_modal(props) {
                         </div>
                         <div className="nextButton">
 
-                            <button onClick={() => props.Next(props.Index)}>next</button>
+                            <button onClick={() => props.Next(props.Index)}>  </button>
                         </div>
                     </div>
                 </div>
