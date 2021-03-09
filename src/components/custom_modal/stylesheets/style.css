@@ -58,7 +58,9 @@ p {
     justify-content: space-around;
     width: 100%;
     margin-bottom: 50px;
+    transition:all 1s ease-out;
   }
+
   .prevButton {
     display: flex;
   }
@@ -88,6 +90,7 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     width: 50px;
+    height: 85%;
     margin-left: 10px;
   }
   
@@ -103,6 +106,7 @@ p {
     background-position: center;
     width: 50px;
     margin-right: 10px;
+    height: 85%;
   }
   
   .nextButton button:focus {
