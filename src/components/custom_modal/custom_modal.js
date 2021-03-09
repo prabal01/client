@@ -3,9 +3,6 @@ import "./stylesheets/style.css";
 
 export default function Custom_modal(props) {
     
-
-    
-  
     return (
     
     <div className={"isOpen"+props.IsOpen}>
